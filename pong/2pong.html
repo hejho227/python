@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module 2pong</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">2pong</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cgaming%5Cappdata%5Clocal%5Cprograms%5Cpython%5Cpython312%5C2pong.py">c:\users\gaming\appdata\local\programs\python\python312\2pong.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;code&nbsp;creates&nbsp;a&nbsp;game&nbsp;of&nbsp;pong&nbsp;for&nbsp;1&nbsp;or&nbsp;2&nbsp;players</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pygame.html">pygame</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-b1hight"><strong>b1hight</strong></a>()</dt><dd><span class="code">Checks&nbsp;if&nbsp;ball&nbsp;if&nbsp;highier&nbsp;or&nbsp;lower&nbsp;then&nbsp;box2<br>
+&nbsp;<br>
+Returns&nbsp;1&nbsp;if&nbsp;it's&nbsp;highier<br>
+Returns&nbsp;2&nbsp;if&nbsp;it's&nbsp;lower<br>
+Returns&nbsp;0&nbsp;if&nbsp;it's&nbsp;nither</span></dd></dl>
+ <dl><dt><a name="-b1hight2"><strong>b1hight2</strong></a>()</dt><dd><span class="code">Checks&nbsp;if&nbsp;ball&nbsp;if&nbsp;highier&nbsp;or&nbsp;lower&nbsp;then&nbsp;box3<br>
+&nbsp;<br>
+Returns&nbsp;1&nbsp;if&nbsp;it's&nbsp;highier<br>
+Returns&nbsp;2&nbsp;if&nbsp;it's&nbsp;lower<br>
+Returns&nbsp;0&nbsp;if&nbsp;it's&nbsp;nither</span></dd></dl>
+ <dl><dt><a name="-b1left"><strong>b1left</strong></a>()</dt><dd><span class="code">Checks&nbsp;relative&nbsp;x&nbsp;position&nbsp;of&nbsp;ball&nbsp;to&nbsp;the&nbsp;box2<br>
+&nbsp;<br>
+Returns&nbsp;1&nbsp;if&nbsp;it&nbsp;is&nbsp;to&nbsp;the&nbsp;left&nbsp;or&nbsp;in&nbsp;the&nbsp;same&nbsp;line<br>
+Returns&nbsp;0&nbsp;if&nbsp;it&nbsp;is&nbsp;not</span></dd></dl>
+ <dl><dt><a name="-b1right"><strong>b1right</strong></a>()</dt><dd><span class="code">Checks&nbsp;relative&nbsp;x&nbsp;position&nbsp;of&nbsp;ball&nbsp;to&nbsp;the&nbsp;box3<br>
+&nbsp;<br>
+Returns&nbsp;1&nbsp;if&nbsp;it&nbsp;is&nbsp;to&nbsp;the&nbsp;left&nbsp;or&nbsp;in&nbsp;the&nbsp;same&nbsp;line<br>
+Returns&nbsp;0&nbsp;if&nbsp;it&nbsp;is&nbsp;not</span></dd></dl>
+ <dl><dt><a name="-best"><strong>best</strong></a>()</dt><dd><span class="code">checks&nbsp;if&nbsp;player&nbsp;has&nbsp;more&nbsp;points&nbsp;than&nbsp;their&nbsp;best&nbsp;score<br>
+&nbsp;<br>
+if&nbsp;so&nbsp;sets&nbsp;best&nbsp;score&nbsp;to&nbsp;current&nbsp;amount&nbsp;of&nbsp;points</span></dd></dl>
+ <dl><dt><a name="-colb2"><strong>colb2</strong></a>()</dt><dd><span class="code">Checks&nbsp;for&nbsp;collisions&nbsp;betwen&nbsp;ball&nbsp;and&nbsp;the&nbsp;other&nbsp;thingy<br>
+&nbsp;<br>
+returns&nbsp;1&nbsp;if&nbsp;distance&nbsp;betwen&nbsp;x&nbsp;coordinates&nbsp;is&nbsp;&lt;=&nbsp;distance&nbsp;betwene&nbsp;y<br>
+returns&nbsp;2&nbsp;if&nbsp;distance&nbsp;betewn&nbsp;x&nbsp;coordinates&nbsp;is&nbsp;&gt;&nbsp;distance&nbsp;betwene&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;ball&nbsp;is&nbsp;higier&nbsp;than&nbsp;box2<br>
+returns&nbsp;3if&nbsp;distance&nbsp;betewn&nbsp;x&nbsp;coordinates&nbsp;is&nbsp;&gt;&nbsp;distance&nbsp;betwene&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;ball&nbsp;is&nbsp;lower&nbsp;than&nbsp;box2<br>
+returns&nbsp;0&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;colision<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ands&nbsp;sets&nbsp;inside&nbsp;to&nbsp;0</span></dd></dl>
+ <dl><dt><a name="-colb3"><strong>colb3</strong></a>()</dt><dd><span class="code">Checks&nbsp;for&nbsp;collisions&nbsp;betwen&nbsp;ball&nbsp;and&nbsp;the&nbsp;third&nbsp;thingy<br>
+&nbsp;<br>
+returns&nbsp;1&nbsp;if&nbsp;distance&nbsp;betwen&nbsp;x&nbsp;coordinates&nbsp;is&nbsp;&lt;=&nbsp;distance&nbsp;betwene&nbsp;y<br>
+returns&nbsp;2&nbsp;if&nbsp;distance&nbsp;betewn&nbsp;x&nbsp;coordinates&nbsp;is&nbsp;&gt;&nbsp;distance&nbsp;betwene&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;ball&nbsp;is&nbsp;higier&nbsp;than&nbsp;box3<br>
+returns&nbsp;3if&nbsp;distance&nbsp;betewn&nbsp;x&nbsp;coordinates&nbsp;is&nbsp;&gt;&nbsp;distance&nbsp;betwene&nbsp;y<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;ball&nbsp;is&nbsp;lower&nbsp;than&nbsp;box3<br>
+returns&nbsp;0&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;colision<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ands&nbsp;sets&nbsp;inside&nbsp;to&nbsp;0</span></dd></dl>
+ <dl><dt><a name="-colwin"><strong>colwin</strong></a>()</dt><dd><span class="code">checks&nbsp;for&nbsp;colision&nbsp;betwen&nbsp;ball&nbsp;and&nbsp;window&nbsp;borders<br>
+&nbsp;<br>
+returns&nbsp;1&nbsp;if&nbsp;ball&nbsp;colided&nbsp;with&nbsp;left&nbsp;wall<br>
+returns&nbsp;2&nbsp;if&nbsp;ball&nbsp;colided&nbsp;with&nbsp;top&nbsp;or&nbsp;bottom<br>
+and&nbsp;0&nbsp;in&nbsp;other&nbsp;case</span></dd></dl>
+ <dl><dt><a name="-difficulty"><strong>difficulty</strong></a>()</dt><dd><span class="code">allows&nbsp;changing&nbsp;the&nbsp;difficulty<br>
+&nbsp;<br>
+sets&nbsp;diff&nbsp;to&nbsp;1&nbsp;for&nbsp;easy<br>
+sets&nbsp;diff&nbsp;to&nbsp;2&nbsp;for&nbsp;hard</span></dd></dl>
+ <dl><dt><a name="-goodbye"><strong>goodbye</strong></a>()</dt><dd><span class="code">prints&nbsp;goodbye&nbsp;and&nbsp;closes&nbsp;the&nbsp;game</span></dd></dl>
+ <dl><dt><a name="-lose1"><strong>lose1</strong></a>()</dt><dd><span class="code">Waits&nbsp;for&nbsp;user&nbsp;imput<br>
+quits&nbsp;the&nbsp;game&nbsp;if&nbsp;escape&nbsp;is&nbsp;pressed<br>
+restarts&nbsp;the&nbsp;game&nbsp;if&nbsp;r&nbsp;is&nbsp;pressed<br>
+quits&nbsp;to&nbsp;menu&nbsp;if&nbsp;m&nbsp;is&nbsp;pressed</span></dd></dl>
+ <dl><dt><a name="-lose2"><strong>lose2</strong></a>()</dt><dd><span class="code">Waits&nbsp;for&nbsp;user&nbsp;imput<br>
+quits&nbsp;the&nbsp;game&nbsp;if&nbsp;escape&nbsp;is&nbsp;pressed<br>
+restarts&nbsp;the&nbsp;game&nbsp;if&nbsp;r&nbsp;is&nbsp;pressed<br>
+quits&nbsp;to&nbsp;menu&nbsp;if&nbsp;m&nbsp;is&nbsp;pressed</span></dd></dl>
+ <dl><dt><a name="-menu"><strong>menu</strong></a>()</dt><dd><span class="code">main&nbsp;menu</span></dd></dl>
+ <dl><dt><a name="-move"><strong>move</strong></a>(a)</dt><dd><span class="code">Checks&nbsp;if&nbsp;movement&nbsp;should&nbsp;be&nbsp;allowed<br>
+&nbsp;<br>
+Accepts&nbsp;1&nbsp;and&nbsp;2,&nbsp;1&nbsp;if&nbsp;desired&nbsp;movement&nbsp;direction&nbsp;is&nbsp;up<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;2&nbsp;if&nbsp;it's&nbsp;down<br>
+&nbsp;<br>
+Returns&nbsp;0&nbsp;if&nbsp;movement&nbsp;should&nbsp;be&nbsp;free<br>
+Returns&nbsp;1&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;top<br>
+Returns&nbsp;2&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;bottom<br>
+Returns&nbsp;3&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;top&nbsp;with&nbsp;the&nbsp;ball<br>
+Returns&nbsp;4&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;bottom&nbsp;with&nbsp;the&nbsp;ball</span></dd></dl>
+ <dl><dt><a name="-move2"><strong>move2</strong></a>(a)</dt><dd><span class="code">Checks&nbsp;if&nbsp;movement&nbsp;should&nbsp;be&nbsp;allowed&nbsp;for&nbsp;p2<br>
+&nbsp;<br>
+Accepts&nbsp;1&nbsp;and&nbsp;2,&nbsp;1&nbsp;if&nbsp;desired&nbsp;movement&nbsp;direction&nbsp;is&nbsp;up<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;2&nbsp;if&nbsp;it's&nbsp;down<br>
+&nbsp;<br>
+Returns&nbsp;0&nbsp;if&nbsp;movement&nbsp;should&nbsp;be&nbsp;free<br>
+Returns&nbsp;1&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;top<br>
+Returns&nbsp;2&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;bottom<br>
+Returns&nbsp;3&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;top&nbsp;with&nbsp;the&nbsp;ball<br>
+Returns&nbsp;4&nbsp;if&nbsp;position&nbsp;should&nbsp;be&nbsp;set&nbsp;to&nbsp;bottom&nbsp;with&nbsp;the&nbsp;ball</span></dd></dl>
+ <dl><dt><a name="-outs"><strong>outs</strong></a>()</dt><dd><span class="code">Checks&nbsp;if&nbsp;ball&nbsp;is&nbsp;outside&nbsp;the&nbsp;window<br>
+&nbsp;<br>
+Returns&nbsp;1&nbsp;if&nbsp;it's&nbsp;highier<br>
+Returns&nbsp;2&nbsp;if&nbsp;it's&nbsp;lower<br>
+Returns&nbsp;3&nbsp;if&nbsp;it's&nbsp;to&nbsp;the&nbsp;left<br>
+Returns&nbsp;4&nbsp;if&nbsp;it's&nbsp;to&nbsp;the&nbsp;right<br>
+Returns&nbsp;0&nbsp;if&nbsp;it's&nbsp;not</span></dd></dl>
+ <dl><dt><a name="-p1"><strong>p1</strong></a>()</dt><dd><span class="code">main&nbsp;loop&nbsp;for&nbsp;1&nbsp;player&nbsp;mode</span></dd></dl>
+ <dl><dt><a name="-p2"><strong>p2</strong></a>()</dt><dd><span class="code">main&nbsp;loop&nbsp;for&nbsp;2&nbsp;player&nbsp;mode</span></dd></dl>
+</td></tr></table>
+</body></html>

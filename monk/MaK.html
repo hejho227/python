@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module MaK</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">MaK</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cgaming%5Cappdata%5Clocal%5Cprograms%5Cpython%5Cpython312%5Cmak.py">c:\users\gaming\appdata\local\programs\python\python312\mak.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;code&nbsp;creates&nbsp;a&nbsp;game&nbsp;Missionaries&nbsp;and&nbsp;Cannibals</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pygame.html">pygame</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="MaK.html#charachters">charachters</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="charachters">class <strong>charachters</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#charachters">charachters</a>(posx,&nbsp;posy,&nbsp;where,&nbsp;pic)<br>
+&nbsp;<br>
+Class&nbsp;for&nbsp;<a href="#charachters">charachters</a><br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="charachters-__init__"><strong>__init__</strong></a>(self, posx, posy, where, pic)</dt><dd><span class="code">initializacion&nbsp;for&nbsp;<a href="#charachters">charachters</a><br>
+&nbsp;<br>
+0&nbsp;arg&nbsp;is&nbsp;self<br>
+1&nbsp;arg&nbsp;is&nbsp;position&nbsp;on&nbsp;x&nbsp;axis<br>
+2&nbsp;arg&nbsp;is&nbsp;position&nbsp;on&nbsp;y&nbsp;axis<br>
+3&nbsp;arg&nbsp;is&nbsp;where&nbsp;is&nbsp;the&nbsp;character&nbsp;(1&nbsp;-&nbsp;left,&nbsp;2&nbsp;-&nbsp;raft,&nbsp;3&nbsp;-&nbsp;right)<br>
+4&nbsp;arg&nbsp;is&nbsp;the&nbsp;picture</span></dd></dl>
+
+<dl><dt><a name="charachters-gotox"><strong>gotox</strong></a>(self, destination)</dt><dd><span class="code">goes&nbsp;to&nbsp;position&nbsp;on&nbsp;x&nbsp;axis</span></dd></dl>
+
+<dl><dt><a name="charachters-gotoy"><strong>gotoy</strong></a>(self, destination)</dt><dd><span class="code">goes&nbsp;to&nbsp;position&nbsp;on&nbsp;y&nbsp;axis</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-background"><strong>background</strong></a>(x)</dt><dd><span class="code">checks&nbsp;which&nbsp;bg&nbsp;pic&nbsp;should&nbsp;be&nbsp;next<br>
+&nbsp;<br>
+accepts&nbsp;difrent&nbsp;intigers&nbsp;for&nbsp;difrent&nbsp;bg&nbsp;pics</span></dd></dl>
+ <dl><dt><a name="-bgcheck"><strong>bgcheck</strong></a>()</dt><dd><span class="code">checks&nbsp;if&nbsp;there&nbsp;should&nbsp;be&nbsp;a&nbsp;change&nbsp;of&nbsp;background&nbsp;animation</span></dd></dl>
+ <dl><dt><a name="-charachek"><strong>charachek</strong></a>()</dt><dd><span class="code">checks&nbsp;which&nbsp;type&nbsp;of&nbsp;charachter&nbsp;should&nbsp;be&nbsp;loaded&nbsp;on&nbsp;a&nbsp;boat</span></dd></dl>
+ <dl><dt><a name="-debug"><strong>debug</strong></a>()</dt><dd><span class="code">debug&nbsp;tool&nbsp;-&nbsp;shows&nbsp;values&nbsp;of&nbsp;position&nbsp;of&nbsp;mouse&nbsp;cursor</span></dd></dl>
+ <dl><dt><a name="-exi"><strong>exi</strong></a>()</dt><dd><span class="code">exits&nbsp;the&nbsp;game</span></dd></dl>
+ <dl><dt><a name="-failure"><strong>failure</strong></a>()</dt><dd><span class="code">takes&nbsp;care&nbsp;of&nbsp;failed&nbsp;attempts</span></dd></dl>
+ <dl><dt><a name="-ferry"><strong>ferry</strong></a>()</dt><dd><span class="code">Transports&nbsp;<a href="#charachters">charachters</a>&nbsp;on&nbsp;a&nbsp;raft&nbsp;and&nbsp;the&nbsp;raft&nbsp;itself&nbsp;to&nbsp;the&nbsp;other&nbsp;side</span></dd></dl>
+ <dl><dt><a name="-gam"><strong>gam</strong></a>()</dt><dd><span class="code">Main&nbsp;game&nbsp;loop</span></dd></dl>
+ <dl><dt><a name="-getkey"><strong>getkey</strong></a>()</dt><dd><span class="code">checks&nbsp;for&nbsp;keypresses&nbsp;and&nbsp;mouse&nbsp;presses<br>
+returns&nbsp;1&nbsp;if&nbsp;user&nbsp;imput&nbsp;is&nbsp;correct</span></dd></dl>
+ <dl><dt><a name="-loadcheck"><strong>loadcheck</strong></a>(x)</dt><dd><span class="code">checks&nbsp;which&nbsp;instance&nbsp;of&nbsp;character&nbsp;type&nbsp;should&nbsp;get&nbsp;loaded<br>
+&nbsp;<br>
+accepts&nbsp;intigers&nbsp;for&nbsp;diferent&nbsp;characters&nbsp;that&nbsp;should&nbsp;get&nbsp;loaded<br>
+returns&nbsp;1&nbsp;if&nbsp;successful</span></dd></dl>
+ <dl><dt><a name="-show"><strong>show</strong></a>()</dt><dd><span class="code">prints&nbsp;everything&nbsp;on&nbsp;a&nbsp;screen&nbsp;for&nbsp;game&nbsp;loop</span></dd></dl>
+ <dl><dt><a name="-start"><strong>start</strong></a>()</dt><dd><span class="code">Starts&nbsp;the&nbsp;game&nbsp;and&nbsp;restarts&nbsp;it</span></dd></dl>
+ <dl><dt><a name="-success"><strong>success</strong></a>()</dt><dd><span class="code">takes&nbsp;care&nbsp;of&nbsp;succesful&nbsp;attempts</span></dd></dl>
+ <dl><dt><a name="-unload"><strong>unload</strong></a>(x)</dt><dd><span class="code">unloads&nbsp;<a href="#charachters">charachters</a>&nbsp;from&nbsp;a&nbsp;raft</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BGCHANCE</strong> = 3000<br>
+<strong>BGNUM</strong> = 3<br>
+<strong>BUTPOS</strong> = (400, 200)<br>
+<strong>BUTSIZE</strong> = (400, 200)<br>
+<strong>CEN</strong> = (0, 0)<br>
+<strong>CHARA</strong> = (50, 150)<br>
+<strong>CULPOS</strong> = (400, 100)<br>
+<strong>CULPOS1</strong> = (1024, 520)<br>
+<strong>CULVAL</strong> = 10<br>
+<strong>DEBUG</strong> = 0<br>
+<strong>DELE</strong> = 1000<br>
+<strong>HEADSIZE</strong> = (100, 100)<br>
+<strong>LPOSX</strong> = [20, 75, 130, 20, 75, 20]<br>
+<strong>LPOSY</strong> = [436, 446, 457, 520, 556, 603]<br>
+<strong>MAXPASS</strong> = 2<br>
+<strong>NOACTORS</strong> = 3<br>
+<strong>PRIPOS</strong> = (700, 100)<br>
+<strong>PRIVAL</strong> = 1<br>
+<strong>RAF</strong> = (200, 60)<br>
+<strong>RAFTPOS1</strong> = (270, 642)<br>
+<strong>RAFTPOS2</strong> = (715, 642)<br>
+<strong>RAFTX</strong> = [270, 380, 725, 830]<br>
+<strong>RAFTY</strong> = 527<br>
+<strong>RPOSX</strong> = [1130, 1005, 1100, 1140, 1040, 940]<br>
+<strong>RPOSY</strong> = [404, 585, 585, 685, 685, 685]<br>
+<strong>SPEED</strong> = 200<br>
+<strong>WIN</strong> = (1200, 800)<br>
+<strong>action</strong> = 'listen'<br>
+<strong>back</strong> = 3<br>
+<strong>frames</strong> = 0<br>
+<strong>step</strong> = 1</td></tr></table>
+</body></html>
